@@ -1,5 +1,5 @@
 
-# ⚡ OpsGenius: Autonomous MCP Triage & Action Routing Hub
+# OpsGenius: Autonomous MCP Triage & Action Routing Hub
 
 OpsGenius is a production-grade, decoupled AI automation engine designed to solve one of the biggest headaches growing companies face: **Inbox Chaos**. 
 
@@ -7,7 +7,7 @@ Instead of building a generic, chat-based assistant, this system operates as an 
 
 ---
 
-## 🎯 The "Why" (The Problem & Impact)
+## The "Why" (The Problem & Impact)
 
 Every day, customer-facing businesses are flooded with hundreds of unstructured communications. Some are critical billing errors, some are technical system bugs, and others are simple feature requests. 
 
@@ -33,13 +33,13 @@ Cognitive Extraction Layer: Routes data to Google's Gemini 2.5 Flash via OpenRou
 
 Protocol Core (mcp_server.py): Built natively using FastMCP. Instead of standard tight-coupled APIs, the backend logic functions as a standalone, open-standard Model Context Protocol (MCP) Server. It exposes the operational triage as a reusable protocol tool, meaning this exact engine can be plugged into any corporate AI agent ecosystem natively with zero configuration changes.
 
-📦 Project Setup & Installation
+Project Setup & Installation
 Prerequisites
 Make sure you have Python installed, then set up your local project directory configuration.
 
 1. Clone the Repository
 Bash
-git clone [https://github.com/YOUR_GITHUB_USERNAME/ai_automation_mcp.git](https://github.com/YOUR_GITHUB_USERNAME/ai_automation_mcp.git)
+git clone https://github.com/Yasaswini38/AI_Automation_MCP
 cd ai_automation_mcp
 2. Install Project Dependencies
 Bash
@@ -54,7 +54,7 @@ Run the application execution script to bring up your live browser control hub:
 
 Bash
 streamlit run interface.py
-🏁 Operational Capabilities Demonstrated Live
+Operational Capabilities Demonstrated Live
 When you load or paste an email into the input console and trigger the pipeline, the engine performs three concurrent operational tasks natively:
 
 Type-Safe Variable Mining: It instantly isolates the customer's legal name, reference/account keys, and processes a decimal-based numerical sentiment score.
@@ -66,25 +66,3 @@ Agentic Writing Drafts: It crafts an empathetic, highly tailored response email 
 
 ---
 
-### 🚀 Quick Steps to Push This to GitHub Natively:
-
-Open your terminal inside your project directory (`D:\AIagent>`) and run these standard git commands sequence to create your repository and push the codebase live:
-
-```bash
-# 1. Initialize local repository configuration
-git init
-
-# 2. Add files to staging array
-git add .
-
-# 3. Create initial structural snapshot commit
-git commit -m "feat: initial release of autonomous MCP feedback routing hub"
-
-# 4. Create your main branch channel
-git branch -M main
-
-# 5. Connect to your public GitHub profile repository (Replace with your actual GitHub URL link)
-git remote add origin https://github.com/YOUR_GITHUB_USERNAME/ai_automation_mcp.git
-
-# 6. Push code to remote servers securely
-git push -u origin main
