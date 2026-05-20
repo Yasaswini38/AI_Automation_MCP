@@ -26,7 +26,7 @@ The application utilizes a modular, decoupled architectural footprint to separat
                                                                     │
                                                                     ▼
  [Streamlit Host UI] <── [Deterministic Action Logs] <── [FastMCP Protocol Server Tool]
- 
+ ```
 Ingestion & UI Console (interface.py): Built with Streamlit, providing a clean, dark-mode administrative command layout with responsive metric cards, state badges, and live action logs.
 
 Cognitive Extraction Layer: Routes data to Google's Gemini 2.5 Flash via OpenRouter. By passing a strict structure contract and utilizing upstream Response Healing, it guarantees that the model behaves like a predictable software component, completely removing markdown artifacts or formatting corruption.
@@ -36,24 +36,29 @@ Protocol Core (mcp_server.py): Built natively using FastMCP. Instead of standard
 Project Setup & Installation
 Prerequisites
 Make sure you have Python installed, then set up your local project directory configuration.
-
+```
 1. Clone the Repository
+```
 Bash
 git clone https://github.com/Yasaswini38/AI_Automation_MCP
 cd ai_automation_mcp
+```
 2. Install Project Dependencies
 Bash
 pip install -r requirements.txt
+```
 3. Configure Credentials
 Create a .env file in the root of the project directory to map your secure API endpoints:
-
+```
 Code snippet
 OPENROUTER_API_KEY=your_openrouter_api_key_here
+```
 4. Launch the Live Streamlit Interface
 Run the application execution script to bring up your live browser control hub:
-
+```
 Bash
 streamlit run interface.py
+```
 Operational Capabilities Demonstrated Live
 When you load or paste an email into the input console and trigger the pipeline, the engine performs three concurrent operational tasks natively:
 
@@ -64,5 +69,5 @@ Conditional Webhook Dispatch: If the system detects a Critical/High urgency scor
 Agentic Writing Drafts: It crafts an empathetic, highly tailored response email contextually matching the customer's exact mood and problem metrics—allowing human support operators to simply hit "Review and Send."
 
 
----
+
 
