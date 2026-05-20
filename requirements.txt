@@ -1,0 +1,7 @@
+fastmcp
+uvicorn
+streamlit
+pydantic
+requests
+python-dotenv
+
